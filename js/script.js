@@ -2,37 +2,33 @@ var numero = [];
 
 // 1. CICLO "FOR"
 
-// for (var i = 0; i <= 100; i++) {
-//   if (i == 0) {
-//     numero.push("0");
-//   } else if ((i % 5 == 0) && (i % 3 == 0)) {
-//     numero.push("FIZZBUZZ");
-//   } else if (i % 5 == 0) {
-//     numero.push("BUZZ");
-//   } else if (i % 3 == 0) {
-//     numero.push("FIZZ");
+// for (var i = 1; i <= 100; i++) {
+//   var numbers = i;
+//   if ((numbers % 5 == 0) && (numbers % 3 == 0)) {
+//     document.getElementById("lista").innerHTML += "<li>" + "FIZZBUZZ" + "</li>";
+//   } else if (numbers % 5 == 0) {
+//     document.getElementById("lista").innerHTML += "<li>" + "BUZZ" + "</li>";
+//   } else if (numbers % 3 == 0) {
+//     document.getElementById("lista").innerHTML += "<li>" + "FIZZ" + "</li>";
 //   } else {
-//     numero.push(i);
+//     document.getElementById("lista").innerHTML += "<li>" + i + "</li>";
 //   }
-//   document.getElementById("lista").innerHTML += "<li>" + numero[i] + "</li>";
 // }
 
 
 // 2. CICLO "WHILE"
 
-// var i = 0;
-// while (i <= 100) {
-//   if (i == 0) {
-//     numero.push("0");
-//   } else if ((i % 5 == 0) && (i % 3 == 0)) {
-//     numero.push("FIZZBUZZ");
-//   } else if (i % 5 == 0) {
-//     numero.push("BUZZ");
-//   } else if (i % 3 == 0) {
-//     numero.push("FIZZ");
-//   } else {
-//     numero.push(i);
-//   }
-//   document.getElementById("lista").innerHTML += "<li>" + numero[i] + "</li>";
-//   i++;
-// }
+var i = 1;
+while (i <= 100) {
+  var numbers = i;
+  if ((numbers % 5 == 0) && (numbers % 3 == 0)) {
+    document.getElementById("lista").innerHTML += "<li>" + "FIZZBUZZ" + "</li>";
+  } else if (numbers % 5 == 0) {
+    document.getElementById("lista").innerHTML += "<li>" + "BUZZ" + "</li>";
+  } else if (numbers % 3 == 0) {
+    document.getElementById("lista").innerHTML += "<li>" + "FIZZ" + "</li>";
+  } else {
+    document.getElementById("lista").innerHTML += "<li>" + i + "</li>";
+  }
+  i++;
+}
