@@ -5,7 +5,7 @@ var numero = [];
 // for (var i = 0; i <= 100; i++) {
 //   if (i == 0) {
 //     numero.push("0");
-//   } else if (i % 5 == 0 && i % 3 == 0) {
+//   } else if ((i % 5 == 0) && (i % 3 == 0)) {
 //     numero.push("FIZZBUZZ");
 //   } else if (i % 5 == 0) {
 //     numero.push("BUZZ");
@@ -24,7 +24,7 @@ var numero = [];
 // while (i <= 100) {
 //   if (i == 0) {
 //     numero.push("0");
-//   } else if (i % 5 == 0 && i % 3 == 0) {
+//   } else if ((i % 5 == 0) && (i % 3 == 0)) {
 //     numero.push("FIZZBUZZ");
 //   } else if (i % 5 == 0) {
 //     numero.push("BUZZ");
